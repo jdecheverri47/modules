@@ -8,7 +8,7 @@
           }
       }"/>
 
-      <UButton label="Add" color="white" icon="i-heroicons-plus-solid" :ui="{
+      <UButton label="Add" color="white" icon="i-heroicons-plus-solid" @click="$emit('changeAddState')"  :ui="{
                   color: {
                       white: {
                           solid: 'bg-neutral-100 border border-gray-300 hover:border-slate-300 hover:bg-slate-200 hover:transition-all hover:duration-400 hover:ease-in-out transition-all duration-400 ease-in-out'
@@ -28,5 +28,4 @@
 
 <script setup>
 const data = inject('sharedData');
-console.log(data.indexValue.value)
 </script>
