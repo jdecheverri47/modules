@@ -16,7 +16,7 @@
                   }
               }"/>
 
-      <UButton label="Delete" color="red" icon="i-heroicons-trash" class="text-red-500 hover:shadow-sm hover:shadow-red-200" :ui="{
+      <UButton @click="$emit('changeDeleteState')" :disabled="data.indexValue.value === null" label="Delete" color="red" icon="i-heroicons-trash" class="text-red-500 hover:shadow-sm hover:shadow-red-200" :ui="{
           color: {
               red: {
                   solid: 'bg-neutral-100 border border-red-300 hover:border-red-300 hover:bg-red-200 hover:transition-all hover:duration-400 hover:ease-in-out transition-all duration-400 ease-in-out'
